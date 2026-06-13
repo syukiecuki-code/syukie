@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PASSWORD</title>
+	<style>
+		h2{
+			font-family: Arial;
+		}
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			background-color: black;
+			margin: 0px;
+		}
+		div{
+			padding: 20px;
+			background-color: white;
+			height: 150px;
+			width: 300px;
+			border-radius: 20px;
+		}
+	</style>
+</head >
+<body>
+	<div>
+		<h2>Please put your password</h2>
+		<input type="password" id="pass" placeholder="Enter Password">
+		<button onclick="checkPass()">Enter</button>
+	</div>
+	
+</body>
+
+
+<script>
+	function checkPass() {
+		const password = document.getElementById("pass").value;
+		const correctPass = "meow";
+
+		if (password===correctPass) {
+			window.location.href="hosni.html";}
+		else {
+			document.getElementById("error").innerText = "Incorrect Password!";
+		}
+		
+	}
+
+</script>
+</html>
